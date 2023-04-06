@@ -81,7 +81,7 @@ export default function CheckTable(props: { columnsData: any; tableData: any }) 
 													me='10px'
 												/>
 												<Text color={textColor} fontSize='sm' fontWeight='700'>
-													{cell.value[0]}
+													Product
 												</Text>
 											</Flex>
 										);
@@ -89,14 +89,14 @@ export default function CheckTable(props: { columnsData: any; tableData: any }) 
 										data = (
 											<Flex align='center'>
 												<Text me='10px' color={textColor} fontSize='sm' fontWeight='700'>
-													{cell.value}%
+													100
 												</Text>
 											</Flex>
 										);
 									} else if (cell.column.Header === 'QUANTITY') {
 										data = (
 											<Text color={textColor} fontSize='sm' fontWeight='700'>
-												{cell.value}
+												100
 											</Text>
 										);
 									} else if (cell.column.Header === 'DATE') {

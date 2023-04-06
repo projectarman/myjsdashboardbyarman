@@ -43,7 +43,7 @@ import {
 import { HSeparator } from "components/separator/Separator";
 import DefaultAuth from "layouts/auth/Default";
 // Assets
-import illustration from "assets/img/auth/auth.png";
+import illustration from "assets/img/avatars/login.gif";
 import { FcGoogle } from "react-icons/fc";
 import { MdOutlineRemoveRedEye } from "react-icons/md";
 import { RiEyeCloseLine } from "react-icons/ri";
@@ -67,6 +67,8 @@ function SignIn() {
   );
   const [show, setShow] = React.useState(false);
   const handleClick = () => setShow(!show);
+  document.getElementById('google-btn')
+
   return (
     <DefaultAuth illustrationBackground={illustration} image={illustration}>
       <Flex
@@ -104,7 +106,9 @@ function SignIn() {
           mx={{ base: "auto", lg: "unset" }}
           me='auto'
           mb={{ base: "20px", md: "auto" }}>
+            <a href="/admin/deafult">
           <Button
+          id="google-btn"
             fontSize='sm'
             me='0px'
             mb='26px'
@@ -113,13 +117,16 @@ function SignIn() {
             borderRadius='16px'
             bg={googleBg}
             color={googleText}
+            
             fontWeight='500'
             _hover={googleHover}
             _active={googleActive}
             _focus={googleActive}>
+
             <Icon as={FcGoogle} w='20px' h='20px' me='10px' />
             Sign in with Google
           </Button>
+          </a>
           <Flex align='center' mb='25px'>
             <HSeparator />
             <Text color='gray.400' mx='14px'>
@@ -127,7 +134,7 @@ function SignIn() {
             </Text>
             <HSeparator />
           </Flex>
-          <FormControl>
+          <FormControl  >
             <FormLabel
               display='flex'
               ms='4px'
@@ -143,7 +150,7 @@ function SignIn() {
               fontSize='sm'
               ms={{ base: "0px", md: "0px" }}
               type='email'
-              placeholder='mail@simmmple.com'
+              placeholder='admin@armanmondal.in'
               mb='24px'
               fontWeight='500'
               size='lg'
@@ -201,7 +208,9 @@ function SignIn() {
                 </Text>
               </NavLink>
             </Flex>
+            <a href="/admin/default" >
             <Button
+              
               fontSize='sm'
               variant='brand'
               fontWeight='500'
@@ -210,6 +219,7 @@ function SignIn() {
               mb='24px'>
               Sign In
             </Button>
+            </a>
           </FormControl>
           <Flex
             flexDirection='column'

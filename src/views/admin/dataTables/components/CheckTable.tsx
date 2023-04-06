@@ -72,7 +72,7 @@ export default function CheckTable(props: { columnsData: any; tableData: any }) 
 													me='10px'
 												/>
 												<Text color={textColor} fontSize='sm' fontWeight='700'>
-													{cell.value[0]}
+													PRODUCT
 												</Text>
 											</Flex>
 										);

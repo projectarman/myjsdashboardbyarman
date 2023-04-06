@@ -17,7 +17,6 @@ import {
 	MdOutlineMoreHoriz,
 	MdOutlinePerson,
 	MdOutlineCardTravel,
-	MdOutlineLightbulb,
 	MdOutlineSettings
 } from 'react-icons/md';
 
@@ -120,8 +119,7 @@ export default function Banner(props: { [x: string]: any }) {
 					}}
 					mb='10px'>
 					<Flex align='center'>
-						<Icon as={MdOutlineLightbulb} h='16px' w='16px' me='8px' />
-						<Text fontSize='sm' fontWeight='400'>
+=						<Text fontSize='sm' fontWeight='400'>
 							Panel 3
 						</Text>
 					</Flex>

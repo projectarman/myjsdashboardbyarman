@@ -29,7 +29,7 @@ export default function Projects(props: { [x: string]: any }) {
 				image={Project1}
 				ranking='1'
 				link='#'
-				title='Technology behind the Blockchain'
+				title='Server Operator'
 			/>
 			<Project
 				boxShadow={cardShadow}
@@ -37,14 +37,14 @@ export default function Projects(props: { [x: string]: any }) {
 				image={Project2}
 				ranking='2'
 				link='#'
-				title='Greatest way to a good Economy'
+				title='Making APIs'
 			/>
 			<Project
 				boxShadow={cardShadow}
 				image={Project3}
 				ranking='3'
 				link='#'
-				title='Most essential tips for Burnout'
+				title='Networking'
 			/>
 		</Card>
 	);

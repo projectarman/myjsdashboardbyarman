@@ -67,7 +67,7 @@ export default function ColumnsTable(props: { columnsData: any; tableData: any }
 										data = (
 											<Flex align='center'>
 												<Text color={textColor} fontSize='sm' fontWeight='700'>
-													{cell.value}
+													PRODUCT
 												</Text>
 											</Flex>
 										);

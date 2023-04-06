@@ -69,7 +69,7 @@ export default function DevelopmentTable(props: { columnsData: any; tableData: a
 									if (cell.column.Header === 'NAME') {
 										data = (
 											<Text color={textColor} fontSize='sm' fontWeight='700'>
-												{cell.value}
+												PRODUCT
 											</Text>
 										);
 									} else if (cell.column.Header === 'TECH') {
